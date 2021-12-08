@@ -1,0 +1,44 @@
+Make a page where a customer can input a loan inquiry with form validation:
+
+- Name (string)
+- Email (string email validation)
+- Phone (integer phone validation)
+- Address (string)
+- City (string)
+- Province (string)
+- House value (integer)
+- Owing against (integer)
+- Amount requested (integer)
+
+
+npx sequelize-cli model:generate --name LoanInquiry --attributes name:string,email:string,phone:integer,address:string,city:string,province:string,house_value:integer,owing_against:integer,amount_requested:integer
+
+//go ahead continue
+
+//complete this command and paste it on the command line
+
+//ok
+
+//anything else for now?
+//thatsall  ok i watch you ok 
+
+
+Must use sequelize CLI
+
+- Cannot use sequelize sync, everything must be done in migration files only
+
+Have a logged in user (whatever method you want for now)
+
+User can view list of inquiries
+
+- User can make offer on inquiry
+- offer includes
+    - interest rate (integer)
+    - comments (text)
+
+Put this in a many to many relationship with junction table
+
+- Inquiry can have many user
+- User can have many inquiry
+
+Display offers from users on the inquiry page
