@@ -124,11 +124,6 @@ let formsMenu = {
       components: { default: RegularForms }
     },
     {
-      path: 'loan-query',
-      name: 'Loan Query',
-      components: { default: LoanQuery }
-    },
-    {
       path: 'extended',
       name: 'Extended Forms',
       components: { default: ExtendedForms }
@@ -272,6 +267,11 @@ const routes = [
         path: 'dashboard',
         name: 'Dashboard',
         components: { default: Dashboard }
+      },
+      {
+        path: 'loan-query',
+        name: 'Loan Query',
+        components: { default: LoanQuery }
       },
       {
         path: 'calendar',
