@@ -8,7 +8,7 @@
         <strong class="text-success">{{String(successMessage)}}<br/></strong>
       </div>
       <card class="stacked-form" title="Stacked Form">
-        <h4 slot="header" class="card-title">Loan Inquery</h4>
+        <h4 slot="header" class="card-title">Create Loan Inquiry</h4>
         <form ref="loanForm" @submit.prevent>
           <div>
             <base-input

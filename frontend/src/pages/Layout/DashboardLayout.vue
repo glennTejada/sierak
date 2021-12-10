@@ -17,13 +17,23 @@
         >
         </sidebar-item>
         <sidebar-item
+          :link="{ name: $t('sidebar.loanInquiry'), icon: 'tim-icons icon-sound-wave' }"
+        >
+          <sidebar-item
+            :link="{ name: $t('sidebar.createLoanInquiry'), path: '/create-loan-inquiry' }"
+          ></sidebar-item>
+          <sidebar-item
+            :link="{ name: $t('sidebar.listLoanInquiry'), path: '/loan-inquiries' }"
+          ></sidebar-item>
+        </sidebar-item>
+        <sidebar-item
           :link="{ name: $t('sidebar.pages'), icon: 'tim-icons icon-image-02' }"
         >
           <sidebar-item
             :link="{ name: $t('sidebar.pricing'), path: '/pricing' }"
           ></sidebar-item>
           <sidebar-item
-            :link="{ name: $t('sidebar.rtl'), path: '/pages/rtl' }"
+            :link="{ name: `test Name`, path: '/pages/rtl' }"
           ></sidebar-item>
           <sidebar-item
             :link="{ name: $t('sidebar.timeline'), path: '/pages/timeline' }"

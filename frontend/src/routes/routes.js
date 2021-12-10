@@ -34,6 +34,7 @@ import Widgets from 'src/pages/Widgets.vue';
 // Forms pages
 const RegularForms = () => import('src/pages/Forms/RegularForms.vue');
 const LoanQuery = () => import('src/pages/Forms/LoanQuery.vue');
+const LoanInqueries = () => import('src/pages/Tables/LoanInqueries');
 const ExtendedForms = () => import('src/pages/Forms/ExtendedForms.vue');
 const ValidationForms = () => import('src/pages/Forms/ValidationForms.vue');
 const Wizard = () => import('src/pages/Forms/Wizard.vue');
@@ -269,9 +270,14 @@ const routes = [
         components: { default: Dashboard }
       },
       {
-        path: 'loan-query',
-        name: 'Loan Query',
+        path: 'create-loan-inquiry',
+        name: 'Create Loan Inquiry',
         components: { default: LoanQuery }
+      },
+      {
+        path: 'loan-inquiries',
+        name: 'Loan Inquiries',
+        components: { default: LoanInqueries }
       },
       {
         path: 'calendar',

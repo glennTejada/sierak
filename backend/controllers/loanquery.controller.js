@@ -29,6 +29,21 @@ exports.loanQuery = (req, res)=>{
     console.log(req.body)
 }
 
+exports.getLoanQueries = (req, res)=>{
+    Loaninquery.findAll()
+        .then(data => {
+            res.send(data);
+        })
+        .catch(err => {
+            res.status(500).send({
+                message:
+                    err.message || "Some error occurred while creating the Tutorial."
+            });
+        })
+    // res.json(req.body.name)
+    console.log(req.body)
+}
+
 const {check, validationResult} = require('express-validator');
 
 exports.validateLoan = [
